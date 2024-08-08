@@ -53,7 +53,7 @@ public class MenuProfessor {
                     break;
                 case 2:
                     String matricula = lerMatriculaFub();
-                    Professor p = cadProfessor.pesquisaProfessor(matricula);
+                    Professor p = cadProfessor.pesquisarProfessor(matricula);
                     if(p!=null){
                         JOptionPane.showMessageDialog(null, p.toString());
                     }
@@ -68,7 +68,7 @@ public class MenuProfessor {
                     break;
                 case 4:
                     matricula = lerMatriculaFub();
-                    Professor m = cadProfessor.pesquisaProfessor(matricula);
+                    Professor m = cadProfessor.pesquisarProfessor(matricula);
                     boolean removido = cadProfessor.removerProfessor(m);
                     if(removido){
                         JOptionPane.showMessageDialog(null, "Professor removido.");

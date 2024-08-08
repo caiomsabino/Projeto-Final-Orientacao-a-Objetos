@@ -1,71 +1,41 @@
 package cadastros;
-
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Iterator;
 import app.Professor;
 
 public class CadastroProfessor {
-    private int numProfessores;
-    private Professor[] professores;
+    private List<Professor> professores;
+
     public CadastroProfessor(){
-        numProfessores = 0;
-        professores = new Professor[0];
+        professores = new LinkedList<Professor>();
     }
     public int cadastrarProfessor(Professor p){
-        Professor[] temp = new Professor[numProfessores+1];
-        for(int i =0; i<professores.length; i++){
-            temp[i] = professores[i];
+        boolean cadastrou = professores.add(p);
+        if(cadastrou){
+            return professores.size();
         }
-        temp[temp.length-1] = p;
-        professores = temp;
-        numProfessores++;
-        return numProfessores;
+        return 0;
     }
-    public Professor pesquisaProfessor(String matriculaFUB){
-        Professor resposta = null;
-        for(int i = 0; i<professores.length; i++){
-            Professor p = professores[i];
-            String mat = p.getMatriculaFUB();
-            if(mat.equalsIgnoreCase(matriculaFUB))
-            return professores[i];
+    public Professor pesquisarProfessor(String matriculaFUBProfessor){
+        Iterator<Professor> it = professores.iterator();
+        while(it.hasNext()){
+            Professor p = it.next();
+            if(p.getMatriculaFUB().equalsIgnoreCase(matriculaFUBProfessor))
+                return p;
         }
-        return resposta;
+        return null;
     }
     public boolean removerProfessor(Professor p){
-        Professor removido = null;
-        if(p != null)
-        removido = pesquisaProfessor(p.getMatriculaFUB());
-        if(removido ==  null)
-        return false;
-
-        Professor[] temp = new Professor[numProfessores-1];
-        int j = 0;
-        for (int i = 0; i < professores.length; i++) {
-            if(professores[i] != removido){
-                temp[j] = professores[i];
-                j++;
-            }
-            else{
-                professores[i] = null;
-            }
-        }
-        professores =temp;
-        numProfessores--;
-        return true;
-
+        boolean resposta = false;
+        if(professores.contains(p))
+            resposta = professores.remove(p);
+        return resposta;
     }
-    public boolean atualizarProfessor(String matriculaFUB, Professor p){
-        int i;
-        for ( i = 0; i < professores.length; i++) {
-            if(professores[i].getMatriculaFUB().equalsIgnoreCase(matriculaFUB))
-            break;
-        }
-        if(i>numProfessores){
-            return false;
-        }
-        else{
-            professores[i] = p;
-        }
+    public boolean atualizarProfessor(String nome, Professor p){
+        Professor remover = pesquisarProfessor(nome);
+        professores.remove(remover);
+        professores.add(p);
         return true;
-        
     }
-
 }
