@@ -40,4 +40,11 @@ public class CadastroProfessor {
         professores.add(p);
         return true;
     }
+    public Professor buscarProfessor(String nome, String matriculaFUB){
+        for(Professor professor : professores){
+            if(professor.getNome().equals(nome) && professor.getMatriculaFUB().equals(matriculaFUB))
+                return professor;
+        }
+        return null;
+    }
 }

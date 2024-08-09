@@ -41,4 +41,11 @@ public class CadastroAluno {
         alunos.add(a);
         return true;
     }
+    public Aluno buscarAluno(String nome, String matricula){
+        for(Aluno aluno : alunos){
+            if(aluno.getNome().equals(nome) && aluno.getMatricula().equals(matricula))
+                return aluno;
+        }
+        return null;
+    }
 }
