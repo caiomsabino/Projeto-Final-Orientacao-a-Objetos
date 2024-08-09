@@ -8,7 +8,7 @@ public class Turma {
     private List<Aluno> alunos; 
     private Disciplina disciplina;
 
-    public Turma(String codigo, Professor professor, List<Aluno> alunos, Disciplina disciplina) {
+    public Turma(String codigo, List<Aluno> alunos, Professor professor, Disciplina disciplina) {
         this.codigo = codigo;
         this.professor = professor;
         this.alunos = alunos;

@@ -7,6 +7,10 @@ import app.Turma;
 public class CadastroTurma {
     private LinkedList<Turma> turmas;
 
+    public CadastroTurma(){
+        turmas = new LinkedList<>();
+    }
+
     public int cadastrarTurma(Turma t){
         boolean cadastrou = turmas.add(t);
         if(cadastrou){
