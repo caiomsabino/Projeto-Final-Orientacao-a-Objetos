@@ -53,6 +53,7 @@ public class MenuAluno {
 			case 1:
 				Aluno novoAluno = dadosNovoAluno();
 				cadAluno.cadastrarAluno(novoAluno);
+				JOptionPane.showMessageDialog(null,"Aluno cadastrado com sucesso!");
 				break;
 				
 			case 2: 

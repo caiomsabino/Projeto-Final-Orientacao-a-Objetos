@@ -50,6 +50,7 @@ public class MenuProfessor {
                 case 1:
                     Professor professor = dadosNovoProfessor();
                     cadProfessor.cadastrarProfessor(professor);
+                    JOptionPane.showMessageDialog(null,"Professor cadastrado com sucesso!");
                     break;
                 case 2:
                     String matricula = lerMatriculaFub();

@@ -33,6 +33,7 @@ public class MenuDisciplina {
 			case 1:
 				Disciplina novaDisciplina = dadosNovaDisciplina();
 				cadDisciplina.cadastrarDisciplina(novaDisciplina);
+				JOptionPane.showMessageDialog(null,"Disciplina cadastrado com sucesso!");
 				break;
 				
 			case 2: 
