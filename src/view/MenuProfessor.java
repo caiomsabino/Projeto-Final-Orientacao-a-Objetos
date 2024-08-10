@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import app.Professor;
 import cadastros.CadastroProfessor;
+import exceptions.CampoEmBrancoException;
 
 public class MenuProfessor {
     public static Professor dadosNovoProfessor(){
@@ -29,7 +30,7 @@ public class MenuProfessor {
     private static String lerMatriculaFub(){
         return JOptionPane.showInputDialog("Digite a matricula fub do professor: ");
     }
-    public static void menuProfessor(CadastroProfessor cadProfessor){
+    public static void menuProfessor(CadastroProfessor cadProfessor) throws CampoEmBrancoException{
         String txt = "Informe a opção desejada: \n"+
                         "1. Cadastrar professor. \n"+
                         "2. Pesquisar professor\n"+

@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import app.Disciplina;
 import cadastros.CadastroDisciplina;
+import exceptions.CampoEmBrancoException;
 
 public class MenuDisciplina {
 
@@ -16,7 +17,7 @@ public class MenuDisciplina {
 		return JOptionPane.showInputDialog("Informe o nome da Disciplina: ");
 	}
 
-	public static void menuDisciplina(CadastroDisciplina cadDisciplina) {
+	public static void menuDisciplina(CadastroDisciplina cadDisciplina) throws CampoEmBrancoException {
 		String txt = "Informe a opção desejada \n"
 				+ "1 - Cadastrar disciplina\n"
 				+ "2 - Pesquisar disciplina\n"

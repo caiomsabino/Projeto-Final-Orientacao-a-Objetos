@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.Iterator;
 import app.Disciplina;
+import exceptions.CampoEmBrancoException;
 
 public class CadastroDisciplina {
     private List<Disciplina> disciplinas;
@@ -11,7 +12,10 @@ public class CadastroDisciplina {
     public CadastroDisciplina(){
         disciplinas = new LinkedList<Disciplina>();
     }
-    public int cadastrarDisciplina(Disciplina d){
+    public int cadastrarDisciplina(Disciplina d) throws CampoEmBrancoException{
+        if(d.getNome()== null|| d.getNome().isBlank()|| d.getNome().isEmpty()){
+            throw new CampoEmBrancoException("Nome da disciplina está vazio.");
+        }
         boolean cadastrou = disciplinas.add(d);
         if(cadastrou){
             return disciplinas.size();

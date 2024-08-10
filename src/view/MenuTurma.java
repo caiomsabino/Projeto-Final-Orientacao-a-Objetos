@@ -8,6 +8,7 @@ import app.Professor;
 import app.Turma;
 import app.Disciplina;
 import cadastros.CadastroTurma;
+import exceptions.CampoEmBrancoException;
 import cadastros.CadastroProfessor;
 import cadastros.CadastroAluno;
 
@@ -73,7 +74,7 @@ public class MenuTurma {
         return alunos;
     }
 
-    public static void menuTurma(CadastroTurma cadTurma, CadastroProfessor cadProfessor, CadastroAluno cadAluno) {
+    public static void menuTurma(CadastroTurma cadTurma, CadastroProfessor cadProfessor, CadastroAluno cadAluno) throws CampoEmBrancoException{
         String txt = "Informe a opção desejada \n"
                 + "1 - Cadastrar turma\n"
                 + "2 - Pesquisar turma\n"

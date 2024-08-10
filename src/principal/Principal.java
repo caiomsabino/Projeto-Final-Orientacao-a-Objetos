@@ -5,6 +5,7 @@ import cadastros.CadastroAluno;
 import cadastros.CadastroProfessor;
 import cadastros.CadastroDisciplina;
 import cadastros.CadastroTurma;
+import exceptions.CampoEmBrancoException;
 import view.MenuAluno;
 import view.MenuPrincipal;
 import view.MenuProfessor;
@@ -17,7 +18,7 @@ public class Principal {
 	static CadastroProfessor cadProfessor;
 	static CadastroDisciplina cadDisciplina;
 	static CadastroTurma cadTurma;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CampoEmBrancoException{
 		cadAluno = new CadastroAluno();
 		cadProfessor = new CadastroProfessor();
 		cadDisciplina = new CadastroDisciplina();

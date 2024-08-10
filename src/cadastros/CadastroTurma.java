@@ -3,6 +3,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import app.Turma;
+import exceptions.CampoEmBrancoException;
 
 public class CadastroTurma {
     private LinkedList<Turma> turmas;
@@ -11,7 +12,10 @@ public class CadastroTurma {
         turmas = new LinkedList<>();
     }
 
-    public int cadastrarTurma(Turma t){
+    public int cadastrarTurma(Turma t) throws CampoEmBrancoException{
+        if(t.getCodigo() == null || t.getCodigo().isBlank() || t.getCodigo().isEmpty()){
+            throw new CampoEmBrancoException("Código da turma está vazio.");
+        }
         boolean cadastrou = turmas.add(t);
         if(cadastrou){
             return turmas.size();
