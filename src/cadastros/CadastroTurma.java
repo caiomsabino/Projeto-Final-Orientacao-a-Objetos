@@ -2,6 +2,7 @@ package cadastros;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+
 import app.Turma;
 import exceptions.CampoEmBrancoException;
 import exceptions.DisciplinaNaoAtribuidaException;

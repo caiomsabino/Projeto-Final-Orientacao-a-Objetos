@@ -132,6 +132,9 @@ public class MenuTurma {
                     if (turma != null) {
                         JOptionPane.showMessageDialog(null, turma.toStringComAlunos());
                     }
+                    else{
+                        JOptionPane.showMessageDialog(null, "Turma não encontrada.");
+                    }
                     break;
 
                 default:

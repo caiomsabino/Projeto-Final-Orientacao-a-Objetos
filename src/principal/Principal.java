@@ -16,6 +16,8 @@ import view.MenuTurma;
 
 public class Principal {
 
+	//Instância de objetos do tipo Cadastros para utilização a partir de opções escolhidas.
+
 	static CadastroAluno cadAluno;
 	static CadastroProfessor cadProfessor;
 	static CadastroDisciplina cadDisciplina;
@@ -28,7 +30,7 @@ public class Principal {
 		cadTurma = new CadastroTurma();
 		
 		int opcao = 0; 
-		
+		//Opções possíveis de serem escolhidas e exceções que podem ocorrer.
 		do {
 			opcao = MenuPrincipal.menuOpcoes(); 
 			switch (opcao) {
@@ -37,17 +39,44 @@ public class Principal {
 					MenuAluno.menuAluno(cadAluno);
 				} catch (CampoEmBrancoException e) {
 					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+					"tente novamente.");
 				}
-					 
 				break;
 				case 2: 
-					MenuProfessor.menuProfessor(cadProfessor);
+					try {
+						MenuProfessor.menuProfessor(cadProfessor);
+					} catch (CampoEmBrancoException e) {
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+						"tente novamente.");
+					}
 				break;
 				case 3: 
-					MenuDisciplina.menuDisciplina(cadDisciplina);
+					try {
+						MenuDisciplina.menuDisciplina(cadDisciplina);
+					} catch (CampoEmBrancoException e) {
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+						"tente novamente.");
+					}
 				break;
 				case 4: 
-					MenuTurma.menuTurma(cadTurma, cadProfessor, cadAluno);
+					try {
+						MenuTurma.menuTurma(cadTurma, cadProfessor, cadAluno);
+					} catch (CampoEmBrancoException e) {
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+						"tente novamente.");
+					} catch(ProfessorNaoAtribuidoException e){
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+						"tente novamente.");
+					} catch (DisciplinaNaoAtribuidaException e){
+						e.printStackTrace();
+						JOptionPane.showMessageDialog(null, "Exceção capturada. Cadastro cancelado, "+
+						"tente novamente.");
+					}
 				break;
 				case 0: 
 				break;
