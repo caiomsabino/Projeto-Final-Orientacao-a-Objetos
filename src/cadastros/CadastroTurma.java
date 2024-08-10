@@ -4,6 +4,8 @@ import java.util.LinkedList;
 
 import app.Turma;
 import exceptions.CampoEmBrancoException;
+import exceptions.DisciplinaNaoAtribuidaException;
+import exceptions.ProfessorNaoAtribuidoException;
 
 public class CadastroTurma {
     private LinkedList<Turma> turmas;
@@ -12,9 +14,15 @@ public class CadastroTurma {
         turmas = new LinkedList<>();
     }
 
-    public int cadastrarTurma(Turma t) throws CampoEmBrancoException{
+    public int cadastrarTurma(Turma t) throws CampoEmBrancoException, DisciplinaNaoAtribuidaException, ProfessorNaoAtribuidoException{
         if(t.getCodigo() == null || t.getCodigo().isBlank() || t.getCodigo().isEmpty()){
             throw new CampoEmBrancoException("Código da turma está vazio.");
+        }
+        if(t.getDisciplina() == null || t.getDisciplina().isBlank() | t.getDisciplina().isEmpty()){
+            throw new DisciplinaNaoAtribuidaException("Campo Disciplina está vazio.");
+        }
+        if(t.getProfessor() == null || t.getProfessor().isBlank() || t.getProfessor().isEmpty()){
+            throw new ProfessorNaoAtribuidoException("Campo Professor está vazio.");
         }
         boolean cadastrou = turmas.add(t);
         if(cadastrou){

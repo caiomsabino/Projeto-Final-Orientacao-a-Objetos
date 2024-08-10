@@ -19,16 +19,16 @@ public class Turma {
         return codigo;
     }
 
-    public final Professor getProfessor() {
-        return professor;
+    public final String getProfessor() {
+        return professor.getNome();
     }
 
     public final List<Aluno> getAlunos() {
         return alunos;
     }
 
-    public final Disciplina getDisciplina() {
-        return disciplina;
+    public final String getDisciplina() {
+        return disciplina.getNome();
     }
 
     protected void finalize() throws Throwable {

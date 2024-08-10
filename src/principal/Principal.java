@@ -6,6 +6,8 @@ import cadastros.CadastroProfessor;
 import cadastros.CadastroDisciplina;
 import cadastros.CadastroTurma;
 import exceptions.CampoEmBrancoException;
+import exceptions.DisciplinaNaoAtribuidaException;
+import exceptions.ProfessorNaoAtribuidoException;
 import view.MenuAluno;
 import view.MenuPrincipal;
 import view.MenuProfessor;
@@ -18,7 +20,8 @@ public class Principal {
 	static CadastroProfessor cadProfessor;
 	static CadastroDisciplina cadDisciplina;
 	static CadastroTurma cadTurma;
-	public static void main(String[] args) throws CampoEmBrancoException{
+	public static void main(String[] args) throws CampoEmBrancoException, DisciplinaNaoAtribuidaException, 
+	ProfessorNaoAtribuidoException{
 		cadAluno = new CadastroAluno();
 		cadProfessor = new CadastroProfessor();
 		cadDisciplina = new CadastroDisciplina();
@@ -30,7 +33,12 @@ public class Principal {
 			opcao = MenuPrincipal.menuOpcoes(); 
 			switch (opcao) {
 				case 1: 
-					MenuAluno.menuAluno(cadAluno); 
+				try {
+					MenuAluno.menuAluno(cadAluno);
+				} catch (CampoEmBrancoException e) {
+					e.printStackTrace();
+				}
+					 
 				break;
 				case 2: 
 					MenuProfessor.menuProfessor(cadProfessor);
