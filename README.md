@@ -22,29 +22,31 @@ Alunos:
   - Matheus Alcantara;
   - Vilmar José;
   - Gabriel Flores;
+    
 - CPF:
- - 34567891011
- - 12345678909
- - 98765432100
- - 45678912345
- - 65432198765
- - 78912345678
+  - 34567891011
+  - 12345678909
+  - 98765432100
+  - 45678912345
+  - 65432198765
+  - 78912345678
         
 - Email:
- - joao.paulo123@example.com
- - andre.lanna85@example.com
- - mariana.pereira21@example.com
- - matheus.alcantara07@example.com
- - vilmar.jose99@example.com
- - gabriel.flores56@example.com
+  - joao.paulo123@example.com
+  - andre.lanna85@example.com
+  - mariana.pereira21@example.com
+  - matheus.alcantara07@example.com
+  - vilmar.jose99@example.com
+  - gabriel.flores56@example.com
    
 - Matrícula:
- - 12121212;
- - 13131313;
- - 14141414;
- - 15151515;
- - 16161616;
- - 17171717;
+  - 12121212;
+  - 13131313;
+  - 14141414;
+  - 15151515;
+  - 16161616;
+  - 17171717;
+    
 - Curso:
   - Engenharia;
   - Medicina;
@@ -55,28 +57,28 @@ Alunos:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Professores:
 -Nome:
-     - Rodrigo Silva;
-     - Cláudia Monteiro;
-     - Thiago Souza;
-     - Fernanda Lopes;
-     - Carlos Almeida;
-     - Ana Beatriz;
+   - Rodrigo Silva;
+   - Cláudia Monteiro;
+   - Thiago Souza;
+   - Fernanda Lopes;
+   - Carlos Almeida;
+   - Ana Beatriz;
 
 -CPF:
-     - 12345678901;
-     - 23456789012;
-     - 34567890123;
-     - 45678901234;
-     - 56789012345;
-     - 67890123456;
+   - 12345678901;
+   - 23456789012;
+   - 34567890123;
+   - 45678901234;
+   - 56789012345;
+   - 67890123456;
        
 - Email:
-      - rodrigo.silva43@example.com;
-      - claudia.monteiro89@example.com;
-      - thiago.souza76@example.com;
-      - fernanda.lopes32@example.com;
-      - carlos.almeida55@example.com;
-      - ana.beatriz91@example.com;
+   - rodrigo.silva43@example.com;
+   - claudia.monteiro89@example.com;
+   - thiago.souza76@example.com;
+   - fernanda.lopes32@example.com;
+   - carlos.almeida55@example.com;
+   - ana.beatriz91@example.com;
       
 - Área de Formação:
       - Matemática;
