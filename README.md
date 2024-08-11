@@ -23,35 +23,35 @@ Alunos:
   - Vilmar José;
   - Gabriel Flores;
 - CPF:
-     - 34567891011
-      - 12345678909
-      - 98765432100
-      - 45678912345
-      - 65432198765
-      - 78912345678
+ - 34567891011
+ - 12345678909
+ - 98765432100
+ - 45678912345
+ - 65432198765
+ - 78912345678
         
- - Email:
-      - joao.paulo123@example.com
-      - andre.lanna85@example.com
-      - mariana.pereira21@example.com
-      - matheus.alcantara07@example.com
-      - vilmar.jose99@example.com
-      - gabriel.flores56@example.com
+- Email:
+ - joao.paulo123@example.com
+ - andre.lanna85@example.com
+ - mariana.pereira21@example.com
+ - matheus.alcantara07@example.com
+ - vilmar.jose99@example.com
+ - gabriel.flores56@example.com
    
 - Matrícula:
-       - 12121212;
-       - 13131313;
-       - 14141414;
-       - 15151515;
-       - 16161616;
-       - 17171717;
+ - 12121212;
+ - 13131313;
+ - 14141414;
+ - 15151515;
+ - 16161616;
+ - 17171717;
 - Curso:
-        - Engenharia;
-        - Medicina;
-        - Enfermagem;
-        - Contabilidade;
-        - Direito;
-        - Medicina;
+  - Engenharia;
+  - Medicina;
+  - Enfermagem;
+  - Contabilidade;
+  - Direito;
+  - Medicina;
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Professores:
 -Nome:
