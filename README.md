@@ -71,12 +71,12 @@ Professores:
      - 67890123456;
        
 - Email:
-      -rodrigo.silva43@example.com;
-      -claudia.monteiro89@example.com;
-      -thiago.souza76@example.com;
-      -fernanda.lopes32@example.com;
-      -carlos.almeida55@example.com;
-      -ana.beatriz91@example.com;
+      - rodrigo.silva43@example.com;
+      - claudia.monteiro89@example.com;
+      - thiago.souza76@example.com;
+      - fernanda.lopes32@example.com;
+      - carlos.almeida55@example.com;
+      - ana.beatriz91@example.com;
       
 - Área de Formação:
       -Matemática;
