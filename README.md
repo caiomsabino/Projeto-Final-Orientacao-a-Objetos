@@ -16,12 +16,12 @@
 
 Alunos:
 - Nomes:
-        - João Paulo;
-        - André Lanna;
-        - Mariana Pereira;
-        - Matheus Alcantara;
-        - Vilmar José;
-        - Gabriel Flores;
+  - João Paulo;
+  - André Lanna;
+  - Mariana Pereira;
+  - Matheus Alcantara;
+  - Vilmar José;
+  - Gabriel Flores;
 - CPF:
      - 34567891011
       - 12345678909
