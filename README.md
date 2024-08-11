@@ -1,4 +1,4 @@
-# Projeto final da disciplina de Orientação a Objetos.
+ # Projeto final da disciplina de Orientação a Objetos.
 
 ## Componentes
 - CAIO LUCAS MESSIAS SABINO : 231026302;
@@ -79,20 +79,20 @@ Professores:
       - ana.beatriz91@example.com;
       
 - Área de Formação:
-      -Matemática;
-      -Física;
-      -Química;
-      -Biologia;
-      -História;
-      -Geografia;
+      - Matemática;
+      - Física;
+      - Química;
+      - Biologia;
+      - História;
+      - Geografia;
 
 - Matrícula do Professor:
-      -18181818;
-      -19191919;
-      -20202020;
-      -21212121;
-      -22222222;
-      -23232323;
+      - 18181818;
+      - 19191919;
+      - 20202020;
+      - 21212121;
+      - 22222222;
+      - 23232323;
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
    Disciplinas:
 - Nomes:
