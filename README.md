@@ -1,1 +1,7 @@
-## Projeto final da disciplina de Orientação a Objetos.
+# Projeto final da disciplina de Orientação a Objetos.
+
+## Componentes
+- CAIO LUCAS MESSIAS SABINO : 231026302;
+- JOAO CARLOS LOBO SOUSA MONTEIRO : 231012245;
+- JOAO VICTOR PIRES SAPIENCIA SANTOS : 231026400;
+- JOÃO IGOR PEREIRA DA COSTA : 231027201.
