@@ -6,7 +6,7 @@
 - JOAO VICTOR PIRES SAPIENCIA SANTOS : 231026400;
 - JOÃO IGOR PEREIRA DA COSTA : 231027201.
 ## Introdução
-O projeto a seguir tem como objetivo principal simular um sistema de integração acadêmica, sendo capaz de administrar
+O projeto a seguir tem como objetivo principal simular um sistema de gestão acadêmica, sendo capaz de administrar
 cadastros de alunos, professores, disciplinas e turmas. Para isso, foram utilizados os principais conceitos da Programação
 Orientada a Objetos, aplicados em Java. Foram aplicados também os conceitos de exceções específicos da linguagem utilizada.
 
