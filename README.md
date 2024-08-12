@@ -5,13 +5,19 @@
 - JOAO CARLOS LOBO SOUSA MONTEIRO : 231012245;
 - JOAO VICTOR PIRES SAPIENCIA SANTOS : 231026400;
 - JOÃO IGOR PEREIRA DA COSTA : 231027201.
+## Introdução
+O projeto a seguir tem como objetivo principal simular um sistema de integração acadêmica, sendo capaz de administrar
+cadastros de alunos, professores, disciplinas e turmas. Para isso, foram utilizados os principais conceitos da Programação
+Orientada a Objetos, aplicados em Java. Foram aplicados também os conceitos de exceções específicos da linguagem utilizada.
+
+
 ## Como executar o programa?
 1. Clique em `Code`, vá em `Download Zip`, escolha a pasta que o arquivo vai ficar;
 2. Descompacte o arquivo e abra no seu editor de código. Se atente as extensões necessárias, se for o caso;
     ***A partir de agora as instruções terão como base o VS Code***;
 3. Clique na pasta `src`, depois na pasta `principal`, abra o arquivo`Principal.java`;
 4. No código do arquivo, clique com o botão direito do mouse;
-5. Abrirá uma janela de opções, clicque em `Run Java`
+5. Abrirá uma janela de opções, clique em `Run Java`
 ## Exemplos de entrada
 
 Alunos:
